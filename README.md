@@ -17,7 +17,7 @@ You can import our models by using HuggingFace's Transformers.
 from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("SoDehghan/supmpn-bert-base-uncased")
-SupMPN_model =  AutoModel.from_pretrained("SoDehghan/supmpn-bert-base-uncased")
+SupMPN_model =  AutoModel.from_pretrained("SoDehghan/supmpn-bert-large-uncased")
 ```
 
 ## Download datasets
