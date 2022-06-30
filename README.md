@@ -69,3 +69,35 @@ Download training data for SupMPN from HuggingFace
 !wget https://huggingface.co/datasets/SoDehghan/datasets-for-supmpn/sub_snli_for_supmpn_8k.csv
 
 ```
+
+## Train your model using SupMPN
+### Clone SupMPN
+```
+!git clone https://github.com/SoDehghan/SupMPN.git
+```
+
+```
+from sentence_transformers import SentenceTransformer, models, SentencesDataset
+from sentence_transformers import datasets
+import SupMPN
+from SupMPN.loss import SupervisedMultiplePositivesNegativesRankingLoss
+
+
+word_embedding_model = models.Transformer('bert-base-uncased', max_seq_length=150)
+pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode = None, pooling_mode_mean_tokens = True,
+                               pooling_mode_cls_token = False,
+                               pooling_mode_max_tokens=False)
+model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
+
+# traini model
+num_epochs = 3
+train_loss = SupervisedMultiplePositivesNegativesRankingLoss(model = model, pos_count=5)
+train_dataloader = datasets.NoDuplicatesDataLoader (training_data, batch_size=32)
+warmup_steps = 0 # math.ceil(len(train_dataloader) * num_epochs * 0.05)
+
+model.fit(train_objectives=[(train_dataloader, train_loss)], epochs=num_epochs, warmup_steps=warmup_steps)
+model.save(model_save_path)
+```
+
+# Acknowledgements
+loss function Codes are adapted from the repos of the EMNLP19 paper [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://github.com/UKPLab/sentence-transformers)
