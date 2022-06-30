@@ -7,28 +7,3 @@ Download training data for SupMPN from HuggingFace
 !wget https://huggingface.co/datasets/SoDehghan/datasets-for-supmpn/sub_snli_for_supmpn_8k.csv
 
 ```
-
-### Load dataseta
-```
-import csv
-dataset=[]
-file = open(dataset_path, "r")
-csv_reader = csv.reader(file)
-for row in csv_reader:
-    dataset.append(row)
-
-```
-
-## Prepare input training data
-```
-from sentence_transformers.readers import InputExample
-
-def prepare_training_data_for_SupMPN (dataset):    
-    data = []
-    data = [InputExample(texts = [dataset[i][0], 
-                                  dataset[i][1], dataset[i][2], dataset[i][3], dataset[i][4], dataset[i][5],
-                                  dataset[i][6], dataset[i][7], dataset[i][8], dataset[i][9], dataset[i][10]]) for i in range(len(dataset)]   
-    
-    return data
-    
- training_data = prepare_training_data_for_supmpn(dataset)
