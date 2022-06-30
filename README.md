@@ -76,6 +76,9 @@ Download training data for SupMPN from HuggingFace
 !git clone https://github.com/SoDehghan/SupMPN.git
 ```
 
+
+## Train your model using SupMPNLR (our objective function) via Sentence transformers
+
 ```
 from sentence_transformers import SentenceTransformer, models, SentencesDataset
 from sentence_transformers import datasets
