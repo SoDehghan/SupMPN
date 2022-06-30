@@ -21,7 +21,7 @@ supmpn =  AutoModel.from_pretrained("SoDehghan/supmpn-bert-large-uncased")
 supmpn.eval()
 ```
 
-## Semantic Textual similarity
+## Semantic Textual Similarity with SupMPN
 ```
 import numpy as np
 !pip3 install seaborn
