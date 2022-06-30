@@ -18,7 +18,7 @@ from transformers import AutoModel, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("SoDehghan/supmpn-bert-base-uncased")
 SupMPN_model =  AutoModel.from_pretrained("SoDehghan/supmpn-bert-base-uncased")
-
+```
 
 ## Download datasets
 Download training data for SupMPN from HuggingFace
