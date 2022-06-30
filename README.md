@@ -22,7 +22,6 @@ SupMPN_model =  AutoModel.from_pretrained("SoDehghan/supmpn-bert-base-uncased")
 
 ## Download datasets
 Download training data for SupMPN from HuggingFace
-
 ```
 !wget https://huggingface.co/datasets/SoDehghan/datasets-for-supmpn/all_snli_mnli_for_supmpn.csv
 
