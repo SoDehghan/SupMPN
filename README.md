@@ -1,5 +1,5 @@
-## SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning for Semantic Textual Similarity
-This repository contains the code, pre-trained models and training data for our paper
+## SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity
+This repository contains the code, pre-trained models and training data for our paper.
 
 ## SupMPN chekpoints
 Our released models are listed in below table with average results on STS and Transfer Learning Tasks. 
