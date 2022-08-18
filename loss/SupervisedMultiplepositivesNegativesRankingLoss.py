@@ -8,7 +8,7 @@ loss function for our paper: "SupMPN: Supervised Multiple Positives and Negative
 import torch
 from torch import nn, Tensor
 from typing import Iterable, Dict
-from sentence_transformers import uti
+from sentence_transformers import util
 
 class SupervisedMultiplePositivesNegativesRankingLoss(nn.Module):  
     """
