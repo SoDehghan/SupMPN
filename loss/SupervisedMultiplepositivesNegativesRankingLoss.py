@@ -1,6 +1,6 @@
 #SupMPNRL
 """
-Created on Fri August 18, 2022
+Created on August 18, 2022
 @author: Somaiyeh Dehghan,   mail: so.dehghan87@gmail.com,   Yildiz Technical University
 loss function for our paper: "SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity"
 """
