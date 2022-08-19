@@ -50,7 +50,7 @@ class SupervisedMultiplePositivesNegativesRankingLoss(nn.Module):
               embeddings_b =  torch.cat(pn_reps[0:])
               scores = self.similarity_fct(embeddings_a, embeddings_b) * self.scale
               labels = torch.tensor(range(len(scores)), dtype=torch.long, device=scores.device)   
-              
+              mask = torch.ones([batch_size, (batch_size * (len(reps)-1))], dtype = torch.int32)
               for i in range (batch_size):
                   mask_index = [*range(labels[i]+batch_size, batch_size*self.pos_count, batch_size)]
                   for j in mask_index :
