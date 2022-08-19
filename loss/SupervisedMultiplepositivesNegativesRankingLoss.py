@@ -1,8 +1,8 @@
 #SupMPNRL
 """
-Created on Fri Jul  1 12:43:13 2022
+Created on Fri August 18, 2022
 @author: Somaiyeh Dehghan,   mail: so.dehghan87@gmail.com,   Yildiz Technical University
-loss function for our paper: "SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning for Semantic Textual Similarity"
+loss function for our paper: "SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity"
 """
 
 import torch
