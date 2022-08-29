@@ -23,15 +23,6 @@ supmpn.eval()
 
 ## Semantic Textual Similarity with SupMPN
 ```
-import numpy as np
-!pip3 install seaborn
-import seaborn as sns
-
-sentences = ["It will snow tomorrow", "Heavy snowfall is expected tomorrow" , "Tomorrow will be sunny",
-             "The athlete excelled the others", "The athlete won" , "The athlete fell behind the others",
-             'This phone looks great', "This phone's speakers deliver clear sound" , 'This phone looks worn out',
-             "The women are eating seafood" , "The women are having lunch", "The women are not eating seafood"
-             ]  
 def cosine(u, v):
     sim = np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
     return round(sim,2)
@@ -45,12 +36,24 @@ def create_similarity_matrix (encodes):
        v.append(sim)
     values.append(v)  
   return values
+```
+```
+import numpy as np
+!pip3 install seaborn
+import seaborn as sns
 
 def plot_similarity (labels, corr, title , rotation):
   sns.set(font_scale=1)
   g = sns.heatmap(corr, xticklabels = labels , yticklabels = labels, vmin=0, vmax =1, cmap = "YlOrRd", annot =False, annot_kws={"size": 8}, cbar = True ) 
   g.set_xticklabels (labels, rotation = rotation)
   g.set_title ("SupMPN-bert-base)
+```
+```
+sentences = ["It will snow tomorrow", "Heavy snowfall is expected tomorrow" , "Tomorrow will be sunny",
+             "The athlete excelled the others", "The athlete won" , "The athlete fell behind the others",
+             'This phone looks great', "This phone's speakers deliver clear sound" , 'This phone looks worn out',
+             "The women are eating seafood" , "The women are having lunch", "The women are not eating seafood"
+             ]  
 
 inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
 # Get the embeddings
