@@ -107,4 +107,4 @@ model.save(model_save_path)
 
 # Acknowledgements
 Loss function Codes are adapted from the repos of the EMNLP19 paper [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://github.com/UKPLab/sentence-transformers)
-Our implementation are based on setup from the repo of the SimCSE paper [SimCSE: Simple Contrastive Learning of Sentence Embeddings] (https://github.com/princeton-nlp/SimCSE)
+Our implementation are based on setup from the repo of the SimCSE paper [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://github.com/princeton-nlp/SimCSE)
