@@ -13,7 +13,7 @@ Our released models are listed in below table with average results on STS and Tr
 
 | Model name          |  GPU: Nvidia A100 80GB  |  batch size | epochs  |   Tarining time  |
 | ------------------- | ----------------------- | ----------- | ------- | ---------------- |
-| SupMPN-bert-base    |           8             |     512     |    3    |  \cong 100 Min.  |
+| SupMPN-bert-base    |           8             |     512     |    3    |  $\cong 100 Min.  |
 | SupMPN-bert-large   |           8             |     200     |    3    |  \cong  220 Min. |
 
 
