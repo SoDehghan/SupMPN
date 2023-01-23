@@ -9,12 +9,12 @@ Our released models are listed in below table with average results on STS and Tr
 | SoDehghan/supmpn-bert-large-uncased    |       83.15       |                     87.75       |
 
 
-## 
+## Hardware requirements
 
-| Model name          |  GPU: Nvidia A100 80GB  |  batch size | epochs  |   Tarining time  |
-| ------------------- | ----------------------- | ----------- | ------- | ---------------- |
-| SupMPN-bert-base    |           8             |     512     |    3    |  $\cong 100 Min.  |
-| SupMPN-bert-large   |           8             |     200     |    3    |  \cong  220 Min. |
+| Model name          |  GPU: Nvidia A100 80GB  |  batch size | epochs  |  
+| ------------------- | ----------------------- | ----------- | ------- | 
+| SupMPN-bert-base    |           8             |     512     |    3    |  
+| SupMPN-bert-large   |           8             |     200     |    3    | 
 
 
 ## Use SupMPN with HuggingFace 
