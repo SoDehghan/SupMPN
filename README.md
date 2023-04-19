@@ -112,8 +112,9 @@ model.fit(train_objectives=[(train_dataloader, train_loss)], epochs=num_epochs, 
 model.save(model_save_path)
 ```
 # Citation
-[Somaiyeh Dehghan](https://scholar.google.com/citations?user=_cZFR5sAAAAJ&hl=en), [Mehmet Fatih Amasyali](https://avesis.yildiz.edu.tr/amasyali/), "SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity", Applied Sciences (Special Issue: Natural Language Processing and Applications), 2022, Vol. 12(19):9659. DOI: [10.3390/app12199659] (https://doi.org/10.3390/app12199659)
+[Somaiyeh Dehghan](https://scholar.google.com/citations?user=_cZFR5sAAAAJ&hl=en), [Mehmet Fatih Amasyali](https://avesis.yildiz.edu.tr/amasyali/), "SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity", Applied Sciences (Special Issue: Natural Language Processing and Applications), 2022, Vol. 12(19):9659. DOI: [10.3390/app12199659](https://doi.org/10.3390/app12199659)
 
+```
 @article{Dehghan2022,
  title    =  {SupMPN: Supervised Multiple Positives and Negatives Contrastive Learning Model for Semantic Textual Similarity},
  author   =  {Somaiyeh Dehghan and Mehmet Fatih Amasyali},
@@ -125,6 +126,7 @@ model.save(model_save_path)
  DOI     =   {10.3390/app12199659}
  %url    =   {https://doi.org/10.3390/app12199659}
 }
+```
 
 # Acknowledgements
 Loss function Codes are adapted from the repos of the EMNLP19 paper [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://github.com/UKPLab/sentence-transformers)
